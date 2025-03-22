@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import FbLogo from '../assets/FbLogo.jpg'; 
+import TwitterLogo from '../assets/TwitterLogo.jpg';
+import InstaLogo from '../assets/InstaLogo.jpg'; 
 
 const Footer = () => {
   return (
@@ -12,9 +15,15 @@ const Footer = () => {
       <div className="footer-section">
         <h3>Follow Us</h3>
         <div className="social-icons">
-          <a href="#facebook"><img src="/assets/facebook-icon.png" alt="Facebook" /></a>
-          <a href="#twitter"><img src="/assets/twitter-icon.png" alt="Twitter" /></a>
-          <a href="#instagram"><img src="/assets/instagram-icon.png" alt="Instagram" /></a>
+          <a href="#facebook">
+            <img src={FbLogo} alt="Facebook" /> 
+          </a>
+          <a href="#twitter">
+            <img src={TwitterLogo} alt="Twitter" /> 
+          </a>
+          <a href="#instagram">
+            <img src={InstaLogo} alt="Instagram" /> 
+          </a>
         </div>
       </div>
       <div className="footer-section">
